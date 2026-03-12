@@ -1,0 +1,15 @@
+directories:
+  output: release
+  buildResources: build
+appId: com.crimson-gemini.photobooth
+productName: Crimson Gemini
+files:
+  - filter:
+      - dist/**
+      - dist-electron/**
+win:
+  target: nsis
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+electronVersion: 40.4.0

@@ -1,4 +1,4 @@
-import { app, BrowserWindow, ipcMain } from 'electron';
+import { app, BrowserWindow, ipcMain, dialog } from 'electron';
 import { exec } from 'child_process';
 import { fileURLToPath } from 'url';
 import { createRequire } from 'module';
@@ -7,6 +7,10 @@ import path from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const require = createRequire(import.meta.url);
+
+// Persists save directory for the session
+let saveDir: string | null = null;
+const getEffectiveSaveDir = () => saveDir ?? app.getPath('pictures');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 // eslint-disable-next-line @typescript-eslint/no-require-imports
@@ -57,6 +61,21 @@ app.whenReady().then(() => {
         });
     });
 
+    // --- Save folder picker ---
+    ipcMain.handle('choose-save-dir', async () => {
+        const result = await dialog.showOpenDialog({
+            properties: ['openDirectory', 'createDirectory'],
+            title: 'Choose Photo Save Folder',
+            defaultPath: getEffectiveSaveDir(),
+        });
+        if (!result.canceled && result.filePaths.length > 0) {
+            saveDir = result.filePaths[0];
+        }
+        return { dir: getEffectiveSaveDir() };
+    });
+
+    ipcMain.handle('get-save-dir', () => ({ dir: getEffectiveSaveDir() }));
+
     ipcMain.handle('save-photo', async (event, dataUrl: string) => {
         try {
             const matches = dataUrl.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
@@ -65,7 +84,7 @@ app.whenReady().then(() => {
             }
 
             const buffer = Buffer.from(matches[2], 'base64');
-            const picturesDir = app.getPath('pictures');
+            const picturesDir = getEffectiveSaveDir();
             const fileName = `crimson-gemini-${Date.now()}.png`;
             const filePath = path.join(picturesDir, fileName);
 

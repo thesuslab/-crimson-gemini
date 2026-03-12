@@ -7,6 +7,7 @@ interface LiveViewProps {
 
 export interface LiveViewHandle {
     captureFrame: () => string | null;
+    getResolution: () => { width: number; height: number } | null;
 }
 
 const LiveView = forwardRef<LiveViewHandle, LiveViewProps>(({ deviceId }, ref) => {
@@ -24,6 +25,10 @@ const LiveView = forwardRef<LiveViewHandle, LiveViewProps>(({ deviceId }, ref) =
                 return canvas.toDataURL('image/png');
             }
             return null;
+        },
+        getResolution: () => {
+            if (!videoRef.current || !videoRef.current.videoWidth) return null;
+            return { width: videoRef.current.videoWidth, height: videoRef.current.videoHeight };
         }
     }));
 
