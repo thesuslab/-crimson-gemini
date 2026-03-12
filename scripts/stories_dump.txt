@@ -1,0 +1,187 @@
+[0] [normal]  
+[1] [normal] Epic: System Architecture to Support Decoupled Player Identity and Multiple Organization Types
+[2] [normal] Epic Goal
+[3] [normal] Evolve JumpNations from a school-centric system into a flexible sports ecosystem where:
+[4] [normal] Player identity is global
+[5] [normal] Schools, Academies, and Clubs operate under a unified organization model (School + Type)
+[6] [normal] Participation is contextual
+[7] [normal] Events support broader hosting and registration models
+[8] [normal] The system scales without major architectural rewrites
+[9] [normal]  
+[10] [normal] Group A - Core System Architecture (FOUNDATION)
+[11] [normal] Must be completed first. Everything else depends on this layer.
+[12] [normal]  
+[13] [normal] US-01: Player Identity
+[14] [normal] As a player
+[15] [normal] I want a single global identity
+[16] [normal] So that I can participate in multiple schools or academies without duplication.
+[17] [normal] Acceptance Criteria
+[18] [normal] A player record is created independently of any school or organization
+[19] [normal] A player can be associated with multiple organizations
+[20] [normal] Player identity is not deleted when removed from an organization
+[21] [normal] Player profile data is shared across all organizations
+[22] [normal] Authentication is not tied to a specific organization
+[23] [normal] Tasks
+[24] [normal] Make House and Grade nullable
+[25] [normal] Shift Player Account/Profile Management to Super Admin
+[26] [normal] Create Organization Player Profile view with org-specific attributes
+[27] [normal] Replace “Student” with “Player” in UI
+[28] [normal]  
+[29] [normal] US-02: Academy Onboarding
+[30] [normal] As an admin
+[31] [normal] I want to create an academy
+[32] [normal] So that it can use the same features as a school.
+[33] [normal] Acceptance Criteria
+[34] [normal] Academy is created using existing School table
+[35] [normal] Organization type is set via School.Type
+[36] [normal] Core platform features work without modification
+[37] [normal] Academic-only features are disabled for academies
+[38] [normal] No separate Academy table is required
+[39] [normal] Task
+[40] [normal] Replace “School” wording with “Organization” where applicable
+[41] [normal]  
+[42] [normal] US-03: Organization Participation
+[43] [normal] As an organization
+[44] [normal] I want to register teams and players into events
+[45] [normal] So that we can participate in competitions.
+[46] [normal] Acceptance Criteria
+[47] [normal] Only teams belonging to the organization can register
+[48] [normal] Only enrolled players can be assigned
+[49] [normal] Teams and players must belong to the same organization
+[50] [normal] Event participation is independent of academic attributes
+[51] [normal] Organization type does not affect logic
+[52] [normal]  
+[53] [normal] US-04: Player Match History
+[54] [normal] Fetch via PlayerId
+[55] [normal] Show across organizations
+[56] [normal] Preserve history after affiliation changes
+[57] [normal] No academic filtering
+[58] [normal]  
+[59] [normal] US-05: Organization Match Listing
+[60] [normal] Matches fetched via organization context
+[61] [normal] Includes hosted + participating matches
+[62] [normal] Independent of academic data
+[63] [normal]  
+[64] [normal] US-06: Enrollment Management
+[65] [normal] Link Player ↔ Organization
+[66] [normal] Allow multi-org enrollment
+[67] [normal] Removing enrollment does not delete player
+[68] [normal]  
+[69] [normal] US-07: Academic Grouping (School Only)
+[70] [normal] Grades/Houses only for School type
+[71] [normal] Optional & nullable
+[72] [normal] Academies rely on Teams for grouping
+[73] [normal]  
+[74] [normal] US-08: Core Platform Stability
+[75] [normal] Estimate: 5 Days
+[76] [normal] All features work regardless of org type
+[77] [normal] No schema-breaking changes
+[78] [normal] Minimal conditional branching
+[79] [normal]  
+[80] [normal] US-09: Level-Based Player Eligibility
+[81] [normal] Levels stored in system reference table
+[82] [normal] Academic → grade ranges
+[83] [normal] Age → supported, not enforced in v1
+[84] [normal] Open → unrestricted
+[85] [normal] No hardcoded lists
+[86] [normal]  
+[87] [normal] US-10: Separate Event Matches Page
+[88] [normal] New page lists all matches
+[89] [normal] Event page shows only:
+[90] [normal] Latest 3 finished
+[91] [normal] Latest 3 upcoming
+[92] [normal] “View All Matches” navigation added
+[93] [normal]  
+[94] [normal] Group B — Player Registration & Affiliation Workflow
+[95] [normal] Introduces workflow state + notifications.
+[96] [normal]  
+[97] [normal] US-11: Player Self Registration
+[98] [normal] Registration screen + APIs
+[99] [normal] Email verification
+[100] [normal] Optional organization selection
+[101] [normal] Create affiliation request
+[102] [normal]  
+[103] [normal] US-12: Player Manages Affiliations
+[104] [normal] View affiliations
+[105] [normal] Request join/leave
+[106] [normal] Notify organization
+[107] [normal] Pending status
+[108] [normal] Mark inactive on leave
+[109] [normal]  
+[110] [normal] US-13: Organization Views Associated Players
+[111] [normal] Player list
+[112] [normal] Filters:
+[113] [normal] sport
+[114] [normal] age
+[115] [normal] group
+[116] [normal] status
+[117] [normal]  
+[118] [normal] US-14: Approve / Reject Affiliation Requests
+[119] [normal] Create Affiliate page
+[120] [normal] Approval queue
+[121] [normal] Accept → add to roster/team
+[122] [normal] Reject → update status
+[123] [normal] Notify player
+[124] [normal]  
+[125] [normal] Group C — Organization Lifecycle & Invitations
+[126] [normal]  
+[127] [normal] US-15: Organization Registration
+[128] [normal] Registration form
+[129] [normal] Organization created inactive
+[130] [normal] JumpNations admin activates
+[131] [normal] Admin account created on activation
+[132] [normal]  
+[133] [normal] US-16: Organization Adds or Invites Players
+[134] [normal] Search by phone/email
+[135] [normal] Send affiliation request
+[136] [normal] Invite non-registered users via link
+[137] [normal] Auto-associate after signup
+[138] [normal]  
+[139] [normal] Group D — Event / Tournament System Expansion (EVENT 2.0)
+[140] [normal] Large feature expansion — treat as a major milestone.
+[141] [normal]  
+[142] [normal] US-17: Tournaments Hosted by Any Organization
+[143] [normal] Any org can host
+[144] [normal] Add participation types
+[145] [normal] Public/private visibility
+[146] [normal] Registration window
+[147] [normal] Fee support
+[148] [normal] Registration status
+[149] [normal] Registration management view
+[150] [normal]  
+[151] [normal] US-18: Invite Organizations to a Tournament
+[152] [normal] Invitation page
+[153] [normal] Track statuses
+[154] [normal] Private → invite only
+[155] [normal] Public → registration link
+[156] [normal] “Available tournaments” view
+[157] [normal]  
+[158] [normal] US-19: Organization Registers Teams/Players
+[159] [normal] Register button
+[160] [normal] Select teams or players
+[161] [normal] Eligibility validation
+[162] [normal] Graceful errors
+[163] [normal]  
+[164] [normal] US-20: Individual Player Joins Open Tournament
+[165] [normal] Discover tournaments
+[166] [normal] Eligibility check
+[167] [normal] Self-register
+[168] [normal] Registered status shown
+[169] [normal]  
+[170] [normal] Group E — Platform Audit & Observability
+[171] [normal]  
+[172] [normal] US-21: Extensive Logging
+[173] [normal] Track affiliation decisions
+[174] [normal] Track tournament registrations
+[175] [normal] Log changes with timestamps
+[176] [normal] Organization-scoped log viewer
+[177] [normal] Log types + reference data
+[178] [normal] 
+[179] [normal]  
+[180] [Heading 1] Group F - League and tournament simulation
+[181] [normal] Create New league / tournament types
+[182] [normal] Add backend logic depending upon tournament style groups / round robin / knockout / best of 3 (any 3 most popular tournament types)
+[183] [normal] Tie sheet generator {depends upon the selected option above}
+[184] [normal] Auto -advance and next match schedule
+[185] [normal] Results and league table generation
+[186] [normal] 

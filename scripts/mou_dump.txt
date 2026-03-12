@@ -1,0 +1,99 @@
+[0] [Normal] 
+[1] [Normal] Letter of Agreement
+[2] [Normal] 
+[3] [Normal] Jumpnations 2.0 Application (Web & Mobile) Development
+[4] [Normal] 
+[5] [Normal] 
+[6] [Normal] 
+[7] [Normal] This Application (Web & Mobile) development services agreement is intended as a legally binding agreement between
+[8] [Normal] 
+[9] [Normal] Between:                    Kathmandu Codes Pvt. Ltd (The Developer)
+[10] [Normal] Balkumari, Lalitpur
+[11] [Normal] 
+[12] [Normal] 
+[13] [Normal] And:                            Jumpnations Pvt. Ltd. (The Client)
+[14] [Normal] Baluwatar, Kathmandu
+[15] [Normal] 
+[16] [Normal] Collectively known as the “Parties”.
+[17] [Normal] The Agreement will be effective from the day of MOU signed by both parties i.e., on April 12, 2024.
+[18] [Normal] This agreement contains 11 pages and is signed by both parties.
+[19] [Normal] BASICS
+[20] [Normal] The Client has agreed to hire the services of The Developer to create, develop, test, and host the Application (Web & Mobile) according to the mentioned scope of work.
+[21] [Normal] The Developer is interested in undertaking such work, and The Parties mutually desire to set and agree to the following terms and conditions as listed.
+[22] [Normal] 
+[23] [Normal] 
+[24] [Normal] 
+[25] [Normal] SCOPE OF WORK
+[26] [Normal] The development contract is for Jumpnations 2.0. Prior development was completed by Kathmandu Codes and they will continue to develop the Version 2.0 The specific deliverables and project requirements shall be governed by the Scope of Work which is provided below as deliverables which shall be reviewed and approved by the Parties as a document that guides the project.
+[27] [Normal] For Jumpnations & Cricket App
+[28] [Normal] (Operations, Maintenance, Security, and Onboarding)
+[29] [Normal] 
+[30] [Normal] 
+[31] [Normal] 
+[32] [Normal] DEVELOPERS REQUIREMENT
+[33] [Normal] The Client hereby retains the services of The Developer to design, develop, and host the Application(Web & Mobile) and necessary additional items as listed in accordance with the proposal submitted by The Developer to The Client.
+[34] [Normal] Changes to this Agreement or to any deliverables in this contract must be submitted in writing and approved by both Parties prior to taking place.
+[35] [Normal] Both Parties agree to notify each other if any risks or schedule delays may take place affecting delivery dates and presentation of the final Application (Web & Mobile).
+[36] [Normal] The Client shall be obliged to provide the required content for developing the Application (Web & Mobile).
+[37] [Normal] The Client shall provide a point of contact from Jumpnations to work on the updates, hold meetings, and articulate updates to the Jumpnations team.
+[38] [Normal] The Developers will not be held responsible for any delay in the project due to the client not providing required content, missing biweekly meetings, lack of communication from the client side, delays in the User Acceptance Test report or not providing any required access in time. The Developer must inform The Client in writing should any of the above be causing delays at least 7 days prior to its need. In order for it to be an acceptable delay, the Developer must have requested such information at least 15 working days prior to its need.
+[39] [Normal] SPRINT MEETINGS
+[40] [Normal] The Developer. follows the Agile Software Development Lifecycle with Scrum basics. Therefore, there will be a biweekly iteration for every sprint. The Client is required to provide at least 2 hours a day at most for weekly meetings at their office where both parties will have a sprint meeting and sprint review. This will keep the projects aligned with the actual requirements of the client within the timeframe.
+[41] [Normal] However, for short-interval projects, we will set meetings according to the needs of the Project and the client’s request.
+[42] [Normal] 
+[43] [Normal] BACKUP
+[44] [Normal] The Developer is in agreement to maintain a copy of the client’s Application (Web & Mobile) on an offline server as a backup to the live site.
+[45] [Normal] 
+[46] [Normal] DESIGN
+[47] [Normal] The Application (Web & Mobile) design will be designed with the help of the Client. The Developer agrees to work with the design provided.
+[48] [Normal] The Client’s Application (Web & Mobile) will not include any of the following.
+[49] [Normal] Any destructive, crude, insulting, harassing, violent, sexual, or any other inappropriate content.
+[50] [Normal] Every piece of information or content should be legal and should follow the Electronic Transaction Act Cyber Law and IT Act.
+[51] [Normal] All materials to be supplied by The Client must be provided with compatible file types and sizes.
+[52] [Normal] Until final approval, no portions of the Application (Web & Mobile) will be made available to end users.
+[53] [Normal] The client must provide the following in the initial stage of development: 
+[54] [Normal] A lead person from their company 
+[55] [Normal] A high-quality Logo and Content of the company
+[56] [Normal] Banner images, Pictures, and Videos for the website
+[57] [Normal] Required descriptions & access to contents and other web services which Jumpnations Application(Web & Mobile) has been using
+[58] [Normal] Contents and Sub contents regarding Products & Introductions (Texts, Images, or Videos)
+[59] [Normal] Required access and contents to migrate required resources
+[60] [Normal] 
+[61] [Normal] AGREEMENT
+[62] [Normal] The Cost of the Project (Development Cost) and Annual Cost are provided below.
+[63] [Normal] The Table below shows the Tasks performed by the Kathmandu Codes Team the resources allocated for the action items with the dedicated work hours and the cost per month for the task performed.
+[64] [Normal] 
+[65] [Normal] The Prices exclude VAT i.e. 13% according to the Inland Revenue Department of Nepal and Third-Party Payment Integration and Administrative Costs. 
+[66] [Normal] Kathmandu Codes will only start charging for the Onboarding once we start training the school and Teachers or Coaches. 
+[67] [Normal] The agreed development framework for the Web Application is .NET and the Mobile Application is Flutter. The Application will be hosted under the Kathmandu Codes Account for both Android Playstore and iOS App Store
+[68] [Normal] The Client holds the Right to own the Source Code of the Application (Web & Mobile). Additional payment i.e. Migration & Server Transfer Cost is required if the Client wants to transfer the Application & Application(Web & Mobile) to other alternatives. 
+[69] [Normal] The Source Code will be handed over to the client once the final payment of the outstanding amount is provided to The Developer If it is requested. (Applies to software)
+[70] [Normal] The Privacy Policy and Terms of Use will be prepared by The Client.
+[71] [Normal] The “Privacy Policy” and “Terms of Use” will be provided by The Client & The Developer will not be held liable for any future Offense or Legal issues because of the policies.
+[72] [Normal] The Developer is solely responsible for developing and Maintaining the Application(Web & Mobile). Anything beyond the Scope of work or Deliverables once agreed upon in the Agreement will be treated as a new requirement and charged accordingly with both Parties having a mutual agreement.
+[73] [Normal] The Application(Web & Mobile) is hosted under Kathmandu Codes and later upon approval, it will be transferred to/under Jumpnations.
+[74] [Normal] The Client will release the payment on a monthly basis.
+[75] [Normal] Delays caused by the client side or due to the Act of God i.e. Natural Calamities like Floods, Earthquakes, etc., or any Pandemic or War will not raise the credibility question for the Developer. If such an event occurs, the Developer must send a written notice to the Client specifying the reason for the delays within 7 days of the reason.
+[76] [Normal] The recurring cost will be charged to the Client, should the Projected Deadline exceed because of Delays from The Client side.
+[77] [Normal] The Client will assign a lead from its team who will coordinate with The Developer team until the project is completed or terminated.
+[78] [Normal] Upon completion and approval of its final Project, or upon termination of this Agreement, whichever occurs first, the Developer shall deliver any and all materials developed in the course of its performance under this Agreement and any other items deemed necessary for the operation of the Client’s upcoming Application (Web & Mobile).
+[79] [Normal] Documentation shall be delivered in either printed or electronic format as agreed upon by both parties.
+[80] [Normal] The Client will be provided an opportunity to have a Beta Testing of the Application (Web & Mobile). The test report is to be submitted in the provided time frame of 30 working days. Should the client fail to provide the test report in time to the Developing company creating hindrances in the Timeline, the Developing company will not be held responsible for the delayed project.
+[81] [Normal] The Developer agrees to maintain Application(Web & Mobile) back-ups and one set of the final materials provided.
+[82] [Normal] Should any unforeseen circumstances arise within the Developer, they are obliged to Inform the Client Company within a week and vice versa.
+[83] [Normal] Both parties will follow the Deliverables Strictly i.e., any further features added, will directly contribute to the Increased Timeline and Budget which needs to be considered and addressed by the Client. However, 5% of decreased or increased tasks will not result in the additional payment or less payment.
+[84] [Normal] The MOU will be valid until the project is completed. The MOU will be revised after undergoing mutual agreement with both parties.
+[85] [Normal] 
+[86] [Normal] 
+[87] [Normal] TERMINATION
+[88] [Normal] 1.   The Client may terminate this Application (Web & Mobile) development services agreement at any time by providing written notice via email or a written letter to The Developer. In the event that the client cancels this project agreement or the project itself, the Developer shall issue a final invoice for any unbilled time or materials with an additional 10% payment of the entire project as compensation to the opportunity loss on behalf of the company. However, if the cancellation of the service agreement is due to not having quality work, negligence or delays in scheduled work, there won’t be any compensation paid by the Client Company.
+[89] [Normal] 2.  The Developer may cancel this agreement in the same manner if The Client fails to pay the agreed amount for the entire project on time also if The Client is forced to implement any illegal or offensive content or technology in the project.
+[90] [Normal] 
+[91] [Normal] 
+[92] [Normal] 
+[93] [Normal] 
+[94] [Normal] 
+[95] [Normal] The initiation of the project will be confirmed after Signing this MOU.
+[96] [Normal] By signing the MOU or by accepting the use of the Services under this Agreement, you acknowledge that you have read and agree to be bound by all terms and conditions of this Agreement and documents.
+[97] [Normal] The undersigned agrees to the terms of this agreement on behalf of his or her organization or Business. 
+[98] [Normal] 

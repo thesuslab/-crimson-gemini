@@ -1,0 +1,121 @@
+﻿=== MOU TABLES ===
+Table 0 (19 rows):
+   S.N | DELIVERABLES | TASKS | DETAILS | DEV HOURS FOR FEATURE/SPORTS | RESOURCES
+   1 | Onboarding | Manuals and Tutorials | Creating user manuals for JumpnationsÆ Admin
+Creating user manuals for JumpnationsÆs School
+Developing How to Videos for Jumpnations (Tutorials) | As Required | 1 UI/UX Designer
+1 Developer (for review and walkthrough)
+1 PM
+   2 | School Onboarding | Onboarding the school to Jumpnations and the school portal | Onboarding School (Adding and updating school data)
+Provide training sessions to school (1 Round full-fledged)
+Support for the schools (10 Schools a year) | As Required | 1 PM
+1 or 2 Customer Success
+   3 | Operational Costs | Cloud Resources and App Services | These resources help run the App
+The spec might need to change when the App goes big with more users
+MS Azure SQL Database, Azure App Services, Blob Storage, Web Server, Notification Hub | Monthly | 1 Dev Ops Person
+   4 | Maintenance and DevOps | The daily task for the Maintenance and DevOps to look after the application | Maintain cloud, current backup, and archive files
+Monitoring & Security for the Application
+Maintain and fix the server-side issues for the Application (Web & Mobile) and make sure it is running 24/7.
+Keep the Application responsive to various devices (80% of devices) and maintain its User-Friendly designs.
+Monitor the performance, availability, and security of applications and infrastructure.
+Analyze resource usage and performance trends to plan for capacity and scalability requirements.
+Respond to incidents, identify root causes, and implement corrective actions to restore service quickly
+Technical maintenance, bug fixes, and minor UI updates for the Application
+Ensure that code changes are integrated regularly, tested thoroughly, and deployed safely and efficiently. | 160hrs per month | 1 Fullstack Dev
+1 Mobile App Dev
+1 API Engineer
+1 QA
+1 PM
+    |  |  |  |  | 
+    |  |  | Table 2: Deliverables Covered for JN  in the Year April 2024- December 2024
+As AMC |  | 
+   S.N | DELIVERABLES | TASKS | DETAILS | DEV HOURS FOR FEATURE/SPORTS | RESOURCES
+   1 | Adding Sports | Adding sports to the Jumpnations App (Backend, Database & Mobile App)
+Covering 10 Sports a year | Creating Wireframe for the Jumpnations sports backend
+Updating the DB for JN Admin
+Creating UI for JN for Mobile App
+Adding Trophies for JN
+Managing and adding stats for leaderboards
+Adding sports and sub-sports in the Jumpnations Admin Panel 
+API (Development, Integration, Test & Deploy)
+DoesnÆt Include Track & Field and Swimming. | 80 Hrs per Sport | 1 UI/UX Designer
+2 Fullstack Developer
+1Mobile App Developer
+1 QA
+1 PM
+   2 | Adding Sub Category of Sports | Adding Sports that has subcategories
+Includes Swimming & Track and Field or any other sports that have subcategories | Creating Wireframe for the Jumpnations sports backend
+Updating the DB for JN Admin
+Creating UI for JN for Mobile App
+Adding Trophies for JN
+Managing and adding stats for leaderboards
+Adding sports and sub-sports in the Jumpnations Admin Panel 
+API (Development, Integration, Test & Deploy)
+Covering 15 Sub Sports | 30 Hrs per Sport | 1 UI/UX Designer
+2 Fullstack Developer
+1 Mobile App Developer
+1 QA
+1 PM
+   3 | Features (Scope) | Open Sports Category | Open Sports such as Mini Games and Preliminary Sports such as Spoon Race, Sack Race, 3 Legged Race, and Mini Games like 3 Pointer Tournament, Penalty Shoot
+Basic features will be covered like Player Name, Rank, and Results
+10 Sports will be covered | 100 Hrs in Total | 2 Fullstack Dev
+1 Mobile App Dev
+2 QA
+1 PM
+    |  | Leaderboards
+(Adding Sports Mechanism & Creating New Leaderboards) | Includes 10 sports that are already in jump-nations
+1st Year we will cover additional 10 Sports + Sub Sports and Open Sports
+Additional sports will be billed separately.  20 hours/sports. Rules and logic should be defined by the JN team
+Any additional changes to the leaderboard algorithm will be considered additional requirements
+KC will require formulas and logic to work on the computation | 120 Hrs (10 Sports from JN)
+20 Hrs per Sport/Event | 2 Fullstack Dev
+1 Mobile App Dev
+2 QA
+1 PM
+    |  | Adding School/Teams
+Request and approval mechanism | Feature to request the school admin, to access other's school Team/Record
+Feature to add school Team after approval for Inter School matches
+The approval mechanism will be based on JN application only | 40 Hrs in Total | 2 Fullstack Dev
+1 QA
+1 PM
+    |  | Sports Position | Position/Role addition for every sport | 10 Hrs in Total | 1 Fullstack Dev
+1 Mobile App Dev
+1 QA
+1 PM
+    |  | Adding Trophies | Adding Trophies for the 10 Sports provided by Jumpnations
+Creating an automation mechanism for the trophies for the 10 Sports
+For the new sports, it will take 20 hrs per sport (Trophies quantity 4 - 6) | 80 Hrs (For the JN 10 Sports)
+20 Hrs per new sport | 2 Fullstack Dev
+3 Mobile App Dev
+1 QA
+1 PM
+    |  | Student Transfer | The student should be able to transfer to a new JN school
+Update in the Database and Architecture, QA Test, UAT, and Deployment
+Non-JN school records are not included. | 40 Hrs in Total | 2 Fullstack Dev
+1 QA
+1 PM
+    | Landing Page for JN | Simple landing page
+FAQ | Landing Pages for Branding
+Showcase Screenshots
+Brief Intro about JN
+Download Links | 120 Hrs in Total | 1 Web Designer
+1 UI/UX Designer
+1 PM
+    | Landing Page for JumpCric | Simple landing page
+Privacy policy pages
+Terms and conditions | Landing Page for Branding
+Showcase Screenshots
+Brief Intro about JumpCric
+Download Links | 80 Hrs in Total | 1 Web Designer
+1 UI/UX Designer
+1 PM
+    | Sports Covered |  | New Sports Covered: 10
+New Sub Categories Covered: 15
+Open Sports Covered: 10
+Total Sports Covered 40 in a Year |  | 1 UI/UX Designer
+2 Fullstack Developer
+1Mobile App Developer
+1 QA
+1 PM
+
+=== STORIES TABLES ===

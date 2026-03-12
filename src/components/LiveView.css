@@ -1,0 +1,17 @@
+.live-view-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.live-video {
+  /* Ensure video fills the container while maintaining aspect ratio or covering */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or contain, depending on preference */
+}
