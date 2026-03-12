@@ -1,8 +1,8 @@
-version: 0.0.0
+version: 1.0.0
 files:
-  - url: Crimson-Gemini-Setup-0.0.0.exe
-    sha512: BEsfSOj6ly60lUE+yV+W9j7N4P/xTSbJroWm49W+un6c+e76INjfUvABl5JpCjUezGkQ75RsF1aMEsHqRhmO5A==
-    size: 96867374
-path: Crimson-Gemini-Setup-0.0.0.exe
-sha512: BEsfSOj6ly60lUE+yV+W9j7N4P/xTSbJroWm49W+un6c+e76INjfUvABl5JpCjUezGkQ75RsF1aMEsHqRhmO5A==
-releaseDate: '2026-03-12T07:28:54.356Z'
+  - url: Crimson-Gemini-Setup-1.0.0.exe
+    sha512: FHfzRwlWYwL75r91Gbrd5xEUlkB3uj74+hymthLddDLzrpRKlNHW+d4Obr59BNKEhd7u9pk6VIOFzOqu9IBy0g==
+    size: 96868228
+path: Crimson-Gemini-Setup-1.0.0.exe
+sha512: FHfzRwlWYwL75r91Gbrd5xEUlkB3uj74+hymthLddDLzrpRKlNHW+d4Obr59BNKEhd7u9pk6VIOFzOqu9IBy0g==
+releaseDate: '2026-03-12T08:02:33.301Z'
